@@ -1,0 +1,116 @@
+.main {
+  background: #eeeeee;
+}
+
+.container {
+  padding-bottom: 24px;
+  padding-top: 32px;
+}
+
+.container:global(.MuiContainer-root) {
+  padding-bottom: 24px;
+  padding-top: 32px;
+}
+
+.panel {
+  background: #ffffff;
+  padding: 24px 20px;
+}
+
+.title {
+  color: #0076be;
+  font-size: 3.1rem;
+  font-weight: 300;
+  line-height: 0.92;
+  margin: 0 0 16px;
+}
+
+.title:global(.MuiTypography-root) {
+  color: #0076be;
+  font-size: 3.1rem;
+  font-weight: 300;
+  line-height: 0.92;
+  margin: 0 0 16px;
+}
+
+.lead {
+  color: #606060;
+  font-size: 1.15rem;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.lead:global(.MuiTypography-root) {
+  color: #606060;
+  font-size: 1.15rem;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.paragraph {
+  color: #606060;
+  font-size: 1.1rem;
+  line-height: 1.25;
+  margin: 0 0 24px;
+}
+
+.paragraph:global(.MuiTypography-root) {
+  color: #606060;
+  font-size: 1.1rem;
+  line-height: 1.25;
+  margin: 0 0 24px;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+
+.image {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .container {
+    padding-bottom: 32px;
+    padding-top: 48px;
+  }
+
+  .container:global(.MuiContainer-root) {
+    padding-bottom: 32px;
+    padding-top: 48px;
+  }
+
+  .panel {
+    padding: 32px;
+  }
+
+  .title {
+    font-size: 5em;
+  }
+
+  .title:global(.MuiTypography-root) {
+    font-size: 5em;
+  }
+
+  .lead {
+    font-size: 1.45rem;
+  }
+
+  .lead:global(.MuiTypography-root) {
+    font-size: 1.45rem;
+  }
+
+  .grid {
+    gap: 32px;
+    grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  }
+
+  .image {
+    max-height: 720px;
+  }
+}

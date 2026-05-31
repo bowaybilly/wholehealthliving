@@ -1,0 +1,149 @@
+.page {
+  background: #eeeeee;
+  padding: 42px 0 54px;
+}
+
+.intro {
+  background: #ffffff;
+  padding: 30px;
+}
+
+.title {
+  color: #1071b7;
+  font-size: 2.45rem;
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 0 0 14px;
+}
+
+.title:global(.MuiTypography-root) {
+  color: #1071b7;
+  font-size: 2.45rem;
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 0 0 14px;
+}
+
+.description {
+  color: #606060;
+  font-size: 1.15rem;
+  line-height: 1.38;
+  margin: 0 0 22px;
+}
+
+.description:global(.MuiTypography-root) {
+  color: #606060;
+  font-size: 1.15rem;
+  line-height: 1.38;
+  margin: 0 0 22px;
+}
+
+.coverImage {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+.postGrid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 1fr);
+  margin-top: 28px;
+}
+
+.postCard {
+  background: #ffffff;
+  border-top: 6px solid #7bb342;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 24px;
+}
+
+.postTitle {
+  color: #1071b7;
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 14px;
+}
+
+.postTitle:global(.MuiTypography-root) {
+  color: #1071b7;
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 14px;
+}
+
+.excerpt {
+  color: #606060;
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.42;
+  margin: 0 0 20px;
+}
+
+.excerpt:global(.MuiTypography-root) {
+  color: #606060;
+  font-size: 1rem;
+  line-height: 1.42;
+  margin: 0 0 20px;
+}
+
+.readMore {
+  align-self: flex-start;
+  background: #0076be;
+  border-radius: 0;
+  box-shadow: none;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  text-transform: none;
+}
+
+.readMore:global(.MuiButtonBase-root) {
+  align-self: flex-start;
+  background: #0076be;
+  border-radius: 0;
+  box-shadow: none;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  text-transform: none;
+}
+
+.readMore:hover {
+  background: #005f9b;
+  box-shadow: none;
+}
+
+@media (max-width: 899px) {
+  .page {
+    padding: 28px 0 42px;
+  }
+
+  .intro {
+    padding: 24px 18px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .title:global(.MuiTypography-root) {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .intro {
+    padding: 38px;
+  }
+
+  .postGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

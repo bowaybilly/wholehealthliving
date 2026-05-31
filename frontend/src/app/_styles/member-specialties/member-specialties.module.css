@@ -1,0 +1,318 @@
+.page {
+  background: #ffffff;
+}
+
+.hero {
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 74% auto;
+  min-height: 360px;
+  padding: 48px 0 50px;
+}
+
+.heroAcupuncture {
+  background-image: url("/images/wholehealth_living_puppy.webp");
+}
+
+.heroChiropractic {
+  background-image: url("/images/wholehealth_living_athome.webp");
+}
+
+.heroMassage {
+  background-image: url("/images/wholehealth_living_family.webp");
+}
+
+.heroNaturopathy {
+  background-image: url("/images/wholehealth_living_lakeday.webp");
+}
+
+.heroOccupationalTherapy {
+  background-image: url("/images/wholehealth_living_cliffs.webp");
+}
+
+.heroSpeechTherapy {
+  background-image: url("/images/wholehealth_living_laughter.webp");
+}
+
+.heroPhysicalTherapy {
+  background-image: url("/images/wholehealth_living_strolling.webp");
+}
+
+.heroPanel {
+  background: rgba(255, 255, 255, 0.94);
+  max-width: 445px;
+  padding: 26px 30px 30px;
+}
+
+.heroTitle {
+  color: #1071b7;
+  font-size: 2.9rem;
+  font-weight: 700;
+  line-height: 0.98;
+  margin: 0 0 14px;
+}
+
+.heroTitle:global(.MuiTypography-root) {
+  color: #1071b7;
+  font-size: 2.9rem;
+  font-weight: 700;
+  line-height: 0.98;
+  margin: 0 0 14px;
+}
+
+.heroText {
+  color: #606060;
+  font-size: 1.18rem;
+  line-height: 1.25;
+  margin: 0 0 22px;
+}
+
+.heroText:global(.MuiTypography-root) {
+  color: #606060;
+  font-size: 1.18rem;
+  line-height: 1.25;
+  margin: 0 0 22px;
+}
+
+.cta {
+  background: #7bb342;
+  border-radius: 0;
+  box-shadow: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 18px;
+  text-transform: none;
+}
+
+.cta:global(.MuiButtonBase-root) {
+  background: #7bb342;
+  border-radius: 0;
+  box-shadow: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 18px;
+  text-transform: none;
+}
+
+.cta:hover {
+  background: #669a35;
+  box-shadow: none;
+}
+
+.section {
+  padding: 42px 0;
+}
+
+.sectionMuted {
+  background: #f5f5f5;
+}
+
+.contentGrid {
+  align-items: center;
+  display: grid;
+  gap: 36px;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.contentGridReverse {
+  align-items: center;
+  display: grid;
+  gap: 36px;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.secondaryImage {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.eyebrow {
+  color: #7bb342;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+}
+
+.eyebrow:global(.MuiTypography-root) {
+  color: #7bb342;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  color: #1071b7;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 0 0 18px;
+}
+
+.sectionTitle:global(.MuiTypography-root) {
+  color: #1071b7;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 0 0 18px;
+}
+
+.paragraph {
+  color: #606060;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  margin: 0 0 16px;
+}
+
+.paragraph:global(.MuiTypography-root) {
+  color: #606060;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  margin: 0 0 16px;
+}
+
+.list {
+  display: grid;
+  gap: 10px;
+  list-style-position: outside;
+  margin: 0 0 18px 20px;
+  padding: 0;
+}
+
+.listItem {
+  color: #606060;
+  font-size: 1.03rem;
+  line-height: 1.32;
+  padding-left: 4px;
+}
+
+.itemLabel {
+  color: #4a4a4a;
+  font-weight: 700;
+}
+
+.footnotes {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.footnote {
+  color: #606060;
+  font-size: 0.78rem;
+  line-height: 1.28;
+  margin: 0;
+}
+
+.footnote:global(.MuiTypography-root) {
+  color: #606060;
+  font-size: 0.78rem;
+  line-height: 1.28;
+  margin: 0;
+}
+
+.quoteBand {
+  background-color: #0076be;
+  background-image: url("/images/wholehealth-living-mark.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: auto 200%;
+  padding: 30px 0;
+}
+
+.quote {
+  color: #ffffff;
+  font-size: 1.65rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.05;
+  margin: 0 auto;
+  max-width: 980px;
+  text-align: center;
+}
+
+.quote:global(.MuiTypography-root) {
+  color: #ffffff;
+  font-size: 1.65rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.05;
+  margin: 0 auto;
+  max-width: 980px;
+  text-align: center;
+}
+
+@media (max-width: 899px) {
+  .hero {
+    background-position: center top;
+    background-size: cover;
+    min-height: 0;
+    padding: 210px 0 0;
+  }
+
+  .heroPanel {
+    margin: 0 -16px;
+    max-width: none;
+    padding: 24px 20px 28px;
+  }
+
+  .heroTitle {
+    font-size: 2.35rem;
+  }
+
+  .heroTitle:global(.MuiTypography-root) {
+    font-size: 2.35rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.85rem;
+  }
+
+  .sectionTitle:global(.MuiTypography-root) {
+    font-size: 1.85rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .contentGrid {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  }
+
+  .contentGridReverse {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  }
+
+  .contentGridReverse .imageWrap {
+    order: 2;
+  }
+
+  .section {
+    padding: 55px 0;
+  }
+
+  .quoteBand {
+    padding: 36px 0;
+  }
+
+  .quote {
+    font-size: 2rem;
+  }
+
+  .quote:global(.MuiTypography-root) {
+    font-size: 2rem;
+  }
+}

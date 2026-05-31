@@ -1,0 +1,162 @@
+.pageContainer {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.pageContainer:global(.MuiContainer-root) {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.pageTitle {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.pageTitle:global(.MuiTypography-root) {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.introCopy {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  max-width: 980px;
+}
+
+.introCopy:global(.MuiTypography-root) {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  max-width: 980px;
+}
+
+.instructionCopy {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.instructionCopy:global(.MuiTypography-root) {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.eligibilityAlert {
+  margin-top: 24px;
+}
+
+.searchWrap {
+  margin-top: 32px;
+}
+
+.searchGrid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+
+.formPaper {
+  padding: 20px;
+}
+
+.formPaper:global(.MuiPaper-root) {
+  padding: 20px;
+}
+
+.formFields {
+  display: grid;
+  gap: 16px;
+}
+
+.resultsHeading {
+  margin-bottom: 12px;
+}
+
+.resultsHeading:global(.MuiTypography-root) {
+  margin-bottom: 12px;
+}
+
+.resultsAlert {
+  margin-bottom: 20px;
+}
+
+.resultCardContent {
+  padding: 24px;
+}
+
+.resultCardContent:global(.MuiCardContent-root) {
+  padding: 24px;
+}
+
+.resultOrg {
+  font-weight: 800;
+  margin-bottom: 12px;
+  margin-top: 6px;
+}
+
+.resultOrg:global(.MuiTypography-root) {
+  font-weight: 800;
+  margin-bottom: 12px;
+  margin-top: 6px;
+}
+
+.resultMeta {
+  color: var(--mui-palette-text-secondary);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.resultPhone {
+  align-items: center;
+  color: var(--mui-palette-text-secondary);
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.phoneLink {
+  text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  .pageContainer {
+    padding-bottom: 64px;
+    padding-top: 64px;
+  }
+
+  .pageContainer:global(.MuiContainer-root) {
+    padding-bottom: 64px;
+    padding-top: 64px;
+  }
+
+  .pageTitle {
+    font-size: 4rem;
+  }
+
+  .pageTitle:global(.MuiTypography-root) {
+    font-size: 4rem;
+  }
+
+  .introCopy {
+    font-size: 1.25rem;
+  }
+
+  .introCopy:global(.MuiTypography-root) {
+    font-size: 1.25rem;
+  }
+
+  .instructionCopy {
+    font-size: 1.2rem;
+  }
+
+  .instructionCopy:global(.MuiTypography-root) {
+    font-size: 1.2rem;
+  }
+
+  .searchGrid {
+    grid-template-columns: minmax(320px, 380px) minmax(0, 1fr);
+  }
+}

@@ -1,0 +1,439 @@
+.main {
+  background: #eeeeee;
+}
+
+.heroContainer {
+  padding-bottom: 24px;
+  padding-top: 32px;
+}
+
+.heroContainer:global(.MuiContainer-root) {
+  padding-bottom: 24px;
+  padding-top: 32px;
+}
+
+.sectionContainer {
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.sectionContainer:global(.MuiContainer-root) {
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.imagePanel {
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 90% auto;
+  margin-bottom: 20px;
+  padding-top: 45%;
+}
+
+.imagePanelFlush {
+  margin-bottom: 0;
+}
+
+.imagePanelRight {
+  background-position: right top;
+}
+
+.panelAlignRight {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.panelContent,
+.widePanelContent {
+  background: #ffffff;
+  border-radius: 0;
+  box-shadow: 10px 10px 4px -4px rgba(0, 0, 0, 0.19);
+  padding: 30px;
+  width: 90%;
+}
+
+.eyebrow {
+  color: #666666;
+  font-family: var(--font-source-sans);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+
+.eyebrow:global(.MuiTypography-root) {
+  color: #666666;
+  font-family: var(--font-source-sans);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+
+.heroTitle,
+.homeHeroTitle {
+  color: #0076be;
+  font-weight: 300;
+  line-height: 0.92;
+  margin: 0 0 16px;
+}
+
+.heroTitle:global(.MuiTypography-root),
+.homeHeroTitle:global(.MuiTypography-root) {
+  color: #0076be;
+  font-weight: 300;
+  line-height: 0.92;
+  margin: 0 0 16px;
+}
+
+.heroTitle {
+  font-size: 3.2rem;
+}
+
+.heroTitle:global(.MuiTypography-root) {
+  font-size: 3.2rem;
+}
+
+.homeHeroTitle {
+  font-size: 54px;
+  line-height: 0.94;
+  margin-bottom: 8px;
+}
+
+.homeHeroTitle:global(.MuiTypography-root) {
+  font-size: 54px;
+  line-height: 0.94;
+  margin-bottom: 8px;
+}
+
+.heroLead,
+.homeLead {
+  color: #606060;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.heroLead:global(.MuiTypography-root),
+.homeLead:global(.MuiTypography-root) {
+  color: #606060;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.heroLead {
+  font-size: 1.2rem;
+}
+
+.heroLead:global(.MuiTypography-root) {
+  font-size: 1.2rem;
+}
+
+.homeLead {
+  font-size: 20px;
+}
+
+.homeLead:global(.MuiTypography-root) {
+  font-size: 20px;
+}
+
+.audienceBand {
+  background: #d4d4d4;
+}
+
+.audienceContainer {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.audienceContainer:global(.MuiContainer-root) {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.audienceGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.audiencePanel {
+  color: #ffffff;
+  padding: 20px;
+}
+
+.audienceTitle {
+  color: inherit;
+  font-size: 1.9em;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 0 12px;
+}
+
+.audienceTitle:global(.MuiTypography-root) {
+  color: inherit;
+  font-size: 1.9em;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 0 12px;
+}
+
+.audienceSummary {
+  color: inherit;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  margin: 0;
+  padding-right: 8px;
+}
+
+.audienceSummary:global(.MuiTypography-root) {
+  color: inherit;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  margin: 0;
+  padding-right: 8px;
+}
+
+.audienceButton {
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 16px;
+  min-width: 0;
+  padding: 9px 13px;
+  text-transform: none;
+}
+
+.audienceButton:global(.MuiButtonBase-root) {
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 16px;
+  min-width: 0;
+  padding: 9px 13px;
+  text-transform: none;
+}
+
+.audienceButton:hover {
+  background: var(--audience-hover);
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.benefitGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+.benefitList {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.benefitItem {
+  color: #606060;
+  display: flex;
+  font-size: 1.1rem;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.checkMark {
+  color: #0076be;
+  font-size: 0.75em;
+  margin-right: 14px;
+  padding-top: 2px;
+}
+
+.benefitLink {
+  color: #0076be;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.quoteBand {
+  background-color: #0076be;
+  background-image: url("/images/wholehealth-living-mark.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: auto 200%;
+  margin-bottom: 0;
+  padding: 24px 16px;
+}
+
+.quoteText {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 0.95;
+  margin: 0;
+  text-align: center;
+}
+
+.quoteText:global(.MuiTypography-root) {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 0.95;
+  margin: 0;
+  text-align: center;
+}
+
+.citations {
+  color: #ffffff;
+  font-size: 0.875rem;
+  margin: 24px 0 0;
+  padding-left: 20px;
+}
+
+.citation {
+  font-style: italic;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 900px) {
+  .heroContainer {
+    padding-bottom: 32px;
+    padding-top: 48px;
+  }
+
+  .heroContainer:global(.MuiContainer-root) {
+    padding-bottom: 32px;
+    padding-top: 48px;
+  }
+
+  .sectionContainer {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+
+  .sectionContainer:global(.MuiContainer-root) {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+
+  .imagePanel {
+    background-position: right top;
+    background-size: 70% auto;
+    margin-bottom: 30px;
+    padding-top: 20px;
+  }
+
+  .imagePanelRight {
+    background-position: left top;
+  }
+
+  .panelAlignRight {
+    justify-content: flex-end;
+  }
+
+  .panelContent {
+    width: 41%;
+  }
+
+  .widePanelContent {
+    width: 50%;
+  }
+
+  .heroTitle {
+    font-size: 5em;
+  }
+
+  .heroTitle:global(.MuiTypography-root) {
+    font-size: 5em;
+  }
+
+  .homeHeroTitle {
+    font-size: 90px;
+    line-height: 81px;
+  }
+
+  .homeHeroTitle:global(.MuiTypography-root) {
+    font-size: 90px;
+    line-height: 81px;
+  }
+
+  .heroLead {
+    font-size: 1.5em;
+  }
+
+  .heroLead:global(.MuiTypography-root) {
+    font-size: 1.5em;
+  }
+
+  .homeLead {
+    font-size: 27px;
+    line-height: 32.4px;
+  }
+
+  .homeLead:global(.MuiTypography-root) {
+    font-size: 27px;
+    line-height: 32.4px;
+  }
+
+  .audienceBand {
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+
+  .audienceContainer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .audienceContainer:global(.MuiContainer-root) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .audienceGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .audiencePanel {
+    min-height: 205px;
+  }
+
+  .audienceTitle {
+    font-size: 2em;
+  }
+
+  .audienceTitle:global(.MuiTypography-root) {
+    font-size: 2em;
+  }
+
+  .audienceSummary {
+    min-height: 86px;
+  }
+
+  .benefitGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quoteBand {
+    padding: 32px 24px;
+  }
+
+  .quoteText {
+    font-size: 2em;
+  }
+
+  .quoteText:global(.MuiTypography-root) {
+    font-size: 2em;
+  }
+
+  .citations {
+    padding-left: 24px;
+  }
+}

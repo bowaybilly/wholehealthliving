@@ -1,0 +1,43 @@
+.formLabel {
+  color: #0076be;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.formLabel:global(.MuiTypography-root) {
+  color: #0076be;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.squareInput :global(.MuiOutlinedInput-root) {
+  border-radius: 0;
+}
+
+.select {
+  border-radius: 0;
+}
+
+.select:global(.MuiInputBase-root) {
+  border-radius: 0;
+}
+
+.submitButton {
+  border-radius: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding-bottom: 11px;
+  padding-top: 11px;
+  text-transform: uppercase;
+}
+
+.submitButton:global(.MuiButtonBase-root) {
+  border-radius: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding-bottom: 11px;
+  padding-top: 11px;
+  text-transform: uppercase;
+}

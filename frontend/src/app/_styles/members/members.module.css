@@ -1,0 +1,109 @@
+.findButton {
+  border: 1px solid #0076be;
+  border-radius: 0;
+  color: #0076be;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  text-transform: none;
+}
+
+.findButton:global(.MuiButtonBase-root) {
+  border: 1px solid #0076be;
+  border-radius: 0;
+  color: #0076be;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  text-transform: none;
+}
+
+.findButton:hover {
+  background: #0076be;
+  border-color: #0076be;
+  color: #ffffff;
+}
+
+.supportingCopy {
+  color: #606060;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.supportingCopy:global(.MuiTypography-root) {
+  color: #606060;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.quoteBand {
+  background-color: #0076be;
+  background-image: url("/images/wholehealth-living-mark.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: auto 200%;
+  margin-bottom: 0;
+  padding: 24px 16px;
+}
+
+.quote {
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 0.95;
+  margin: 0;
+  text-align: center;
+}
+
+.quote:global(.MuiTypography-root) {
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 0.95;
+  margin: 0;
+  text-align: center;
+}
+
+.attribution {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 16px 0 0;
+  text-align: center;
+}
+
+.attribution:global(.MuiTypography-root) {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 16px 0 0;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .supportingCopy {
+    font-size: 1.2em;
+  }
+
+  .supportingCopy:global(.MuiTypography-root) {
+    font-size: 1.2em;
+  }
+
+  .quoteBand {
+    padding: 32px 24px;
+  }
+
+  .quote {
+    font-size: 2em;
+  }
+
+  .quote:global(.MuiTypography-root) {
+    font-size: 2em;
+  }
+}

@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-source-sans);
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
