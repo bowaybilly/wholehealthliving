@@ -1,0 +1,101 @@
+name: Test and Build
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  frontend:
+    name: Frontend
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: frontend
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Type check
+        run: npx tsc --noEmit
+
+      - name: Build
+        run: npm run build
+
+  backend:
+    name: Backend
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: backend/WholeHealthLiving.Api
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
+  terraform:
+    name: Terraform
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check for Terraform files
+        id: terraform-files
+        shell: bash
+        run: |
+          if find . -name '*.tf' -not -path './.git/*' | grep -q .; then
+            echo "found=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "found=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Setup Terraform
+        if: steps.terraform-files.outputs.found == 'true'
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform format check
+        if: steps.terraform-files.outputs.found == 'true'
+        run: terraform fmt -check -recursive
+
+      - name: Terraform validate
+        if: steps.terraform-files.outputs.found == 'true'
+        shell: bash
+        run: |
+          find . -name '*.tf' -not -path './.git/*' -printf '%h\n' |
+            sort -u |
+            while read -r directory; do
+              terraform -chdir="$directory" init -backend=false
+              terraform -chdir="$directory" validate
+            done
